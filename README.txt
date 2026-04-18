@@ -8,12 +8,11 @@
 * Fonts And Color Palette:
 * Montserrat (Headings) - Google Fonts
 * Open Sans (Body Text) - Google Fonts
-* #ff4c4c (Used for buttons and highlights)
-* #ff2e2e (Hover effects)
+* #ffd700 (Gold - Used for buttons, highlights, and hover effects)
 * Background Colors:
-* #0a0a0a
-* #111111
-* #181818
+* #000000 (Black)
+* #181818 (Dark gray for product/feature cards)
 * Text Colors:
-* #ffffff
-* #cccccc
+* #ffffff (White)
+* #cccccc (Light gray for secondary text)
+* #aaaaaa (Medium gray for footer text)
