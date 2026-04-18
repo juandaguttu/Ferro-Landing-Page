@@ -1,0 +1,401 @@
+/* =========================
+GLOBAL STYLES
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:black;
+color:white;
+font-family:"Open Sans",sans-serif;
+line-height:1.6;
+}
+
+h1,h2,h3{
+font-family:"Montserrat",sans-serif;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+/* =========================
+HEADER
+========================= */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:black;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:1.6rem;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:#ffffff;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffD700;
+}
+
+.cta-button{
+background:#ffd700;
+padding:10px 20px;
+border-radius:4px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+transition:.3s;
+}
+
+.cta-button:hover{
+background:#ffd700;
+transform:scale(1.05);
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+position:relative;
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+overflow:hidden;
+}
+
+.hero-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+.hero-overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.6);
+z-index:-1;
+}
+
+.hero-content{
+max-width:700px;
+animation:fadeIn 1.2s ease;
+}
+
+.hero h1{
+font-size:3.5rem;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.2rem;
+margin-bottom:30px;
+}
+
+.cta-primary{
+background:#ffd700;
+padding:14px 30px;
+border-radius:4px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+transition:.3s;
+display:inline-block;
+}
+
+.cta-primary:hover{
+background:#ffd700;
+transform:scale(1.05);
+}
+
+/* =========================
+AMMO
+========================= */
+
+.ammo{
+padding:90px 10%;
+text-align:center;
+background:black;
+}
+
+.ammo h2{
+margin-bottom:40px;
+}
+
+/* =========================
+ACCESSORIES
+========================= */
+
+.accessories{
+padding:90px 10%;
+text-align:center;
+background:black;
+}
+
+.accessories h2{
+margin-bottom:40px;
+}
+
+/* =========================
+FIREARMS
+========================= */
+
+.firearms{
+padding:90px 10%;
+text-align:center;
+background:black;
+}
+
+.firearms h2{
+margin-bottom:40px;
+}
+
+/* =========================
+PRODUCT GRID
+========================= */
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.product{
+background:#181818;
+padding:30px;
+border-radius:8px;
+transition:.3s;
+}
+
+.product:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+.product p{
+margin-top:10px;
+font-size:.95rem;
+color:#ccc;
+}
+
+/* =========================
+FEATURES
+========================= */
+
+.features{
+padding:90px 10%;
+text-align:center;
+background:black;
+}
+
+.features h2{
+margin-bottom:40px;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.feature{
+background:#181818;
+padding:30px;
+border-radius:8px;
+transition:.3s;
+}
+
+.feature:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+.feature p{
+margin-top:10px;
+font-size:.95rem;
+color:#ccc;
+}
+
+/* =========================
+REVIEWS
+========================= */
+
+.reviews{
+padding:90px 10%;
+text-align:center;
+}
+
+.review-container{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:40px;
+}
+
+.review-box{
+background:#181818;
+padding:30px;
+border-radius:8px;
+max-width:300px;
+transition:.3s;
+}
+
+.review-box:hover{
+transform:translateY(-6px);
+}
+
+/* =========================
+CTA SECTION
+========================= */
+
+.cta-section{
+padding:90px 10%;
+display:flex;
+align-items:center;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.cta-text{
+max-width:500px;
+}
+
+.cta-text h2{
+margin-bottom:20px;
+}
+
+.cta-text p{
+margin-bottom:30px;
+color:#ccc;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+background:black;
+padding:40px;
+text-align:center;
+}
+
+.footer-links{
+margin-bottom:15px;
+}
+
+.footer-links a{
+margin:0 10px;
+text-decoration:none;
+color:white;
+}
+
+.social-links a{
+margin:0 10px;
+color:#ffd700;
+text-decoration:none;
+}
+
+footer p{
+margin-top:10px;
+color:#aaa;
+}
+
+/* =========================
+ANIMATION
+========================= */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:1024px){
+
+.feature-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.cta-section{
+flex-direction:column;
+text-align:center;
+}
+
+}
+
+@media(max-width:767px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-direction:column;
+gap:10px;
+}
+
+.feature-grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:2.2rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+}
+
+@media(max-width:480px){
+
+.hero p{
+font-size:.9rem;
+}
+
+}
